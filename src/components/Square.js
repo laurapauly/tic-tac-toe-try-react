@@ -14,7 +14,6 @@ const Button = styled.button`
   padding: 0;
   text-align: center;
 
-  outline: none;
   color: #cc584d;
 `;
 
