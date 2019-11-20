@@ -21,6 +21,10 @@ const Title = styled.h1`
   color: #cc584d;
   border: 10px solid white;
   padding: 5px;
+  height: 100px;
+  width: 300px;
+  font-size: 50px;
+  padding: 10px;
 `;
 
 function App() {
