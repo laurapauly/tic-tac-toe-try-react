@@ -4,21 +4,16 @@ import styled from "@emotion/styled";
 
 const FlexRow = styled.div`
   display: flex;
-  flex-direction: row;
-`;
-
-const GameInfo = styled.div`
-  margin-left: 20px;
+  flex-flow: column;
 `;
 
 export default function Game() {
   return (
     <FlexRow>
-      <Board />
-      <GameInfo>
-        <div>{/* status */}</div>
-        <ol>{/* TODO */}</ol>
-      </GameInfo>
+      <Board gameSize={9} />
     </FlexRow>
   );
 }
+
+// <div>{/* status */}</div>
+// <ol>{/* TODO */}</ol>
