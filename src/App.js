@@ -2,6 +2,7 @@ import React from "react";
 
 import Game from "./components/Game";
 import styled from "@emotion/styled";
+import GlobalStyles from "./components/GlobalStyles.js";
 
 const Container = styled.div`
   text-align: center;
@@ -10,17 +11,22 @@ const Container = styled.div`
   padding: 20px;
   font-size: calc(10px + 2vmin);
   color: #0d4f4a;
-  font-family: "Tomorrow", sans-serif;
   display: flex;
   flex-direction: column;
-
   align-items: center;
+`;
+
+const Title = styled.h1`
+  color: #cc584d;
+  border: 10px solid white;
+  padding: 5px;
 `;
 
 function App() {
   return (
     <Container>
-      <h1>Tic Tac Toe</h1>
+      <GlobalStyles />
+      <Title>Tic Tac Toe</Title>
       <Game />
     </Container>
   );
